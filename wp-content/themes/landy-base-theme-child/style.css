@@ -1,0 +1,154 @@
+/*
+Theme Name: Landy Base Theme Child
+Theme URI: http://underscores.me/
+Template: landy-base-theme
+Author: Erick Landaverry
+Author URI: https://ericklandaverry.com/
+Description: Description
+Tags: custom-background,custom-logo,custom-menu,featured-images,threaded-comments,translation-ready
+Version: 1.0.0.1604091193
+Updated: 2020-10-30 20:53:13
+*/
+/**********************************************
+ Styles are being complied by SCSS 
+**********************************************/
+/********************** 
+        Resets 
+**********************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+
+/********************** 
+        Typography 
+**********************/
+/********************** 
+        Variables 
+**********************/
+/********************** 
+        Buttons 
+**********************/
+/********************** 
+        Animations 
+**********************/
+/********************** 
+        Header 
+**********************/
+/********************** 
+        Media Queries 
+**********************/
+/********************** 
+        Footer 
+**********************/
+
+
+.img-text {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 2em;
+    background-color: #262626;
+    color: #fff;
+    
+}
+
+.img-text h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.img-text p{
+	font-size: 14px;
+}
+.align-cards {
+    min-height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ol.carousel-indicators {
+    margin: unset;
+}
+.single-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -70px;
+}
+
+.carousel-indicators li{
+    background-color: #000;
+    border-radius: 50%;
+
+}
+.carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: #000 !important;
+}
+.carousel-indicators .active {
+    background-color: white !important;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #002891;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 10px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover,
+  button:focus {
+    background: linear-gradient(to right, #FFAF26 , #D9652F);
+    background: linear-gradient(to right, #FFAF26 , #D9652F);
+    border: none;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: #F2F2F2;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .accordion:after {
+    content: '\142F';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  
+  .accordion.active:after {
+    content: "\1431";
+    /* Unicode character for "minus" sign (-) */
+    color: white;
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+    margin-top: 5px;
+  }

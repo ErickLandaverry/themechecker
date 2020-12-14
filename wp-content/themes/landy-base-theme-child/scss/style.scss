@@ -1,0 +1,55 @@
+/*
+Theme Name: Landy Base Theme Child
+Theme URI: http://underscores.me/
+Template: landy-base-theme
+Author: Erick Landaverry
+Author URI: https://ericklandaverry.com/
+Description: Description
+Tags: custom-background,custom-logo,custom-menu,featured-images,threaded-comments,translation-ready
+Version: 1.0.0.1604091193
+Updated: 2020-10-30 20:53:13
+*/
+
+/**********************************************
+ Styles are being complied by SCSS 
+**********************************************/
+
+/********************** 
+        Resets 
+**********************/
+@import './base/resets';
+
+/********************** 
+        Typography 
+**********************/
+@import './base/typography';
+
+/********************** 
+        Variables 
+**********************/
+@import './abstracts/variables';
+
+/********************** 
+        Buttons 
+**********************/
+@import './abstracts/buttons';
+
+/********************** 
+        Animations 
+**********************/
+@import './base/animations';
+
+/********************** 
+        Header 
+**********************/
+@import './layout/header';
+
+/********************** 
+        Media Queries 
+**********************/
+@import './abstracts/media-queries';
+
+/********************** 
+        Footer 
+**********************/
+@import './layout/footer';
