@@ -25,7 +25,18 @@ add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 // Scripts are being called at parent theme > inc > scripts.php
 
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/ErickLandaverry/themechecker',
+	__FILE__,
+	'themechecker'
+);
 
+//Optional: If you're using a private repository, specify the access token like this:
+$myUpdateChecker->setAuthentication('fb2e9536f862371e3a31e65e930930d763e73370');
+
+//Optional: Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('master');
 
 
 
